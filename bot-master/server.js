@@ -3,7 +3,7 @@ var Twit = require('twit')
 var	fs = require('fs'),
     path = require('path'),
     Twit = require('twit'),
-    config = require(path.join('P:', 'projets', 'Twitter', 'bot', 'config.js'));
+    config = require(path.join('P:', 'projets', 'Twitter', 'bot', 'config.js')); //how to get rid of ,,, in path?
 	
 var T = new Twit(config);
 
