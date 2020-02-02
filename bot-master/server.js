@@ -1,12 +1,10 @@
 var Twit = require('twit')
 
-var	fs = require('fs'),
-    path = require('path'),
-    Twit = require('twit'),
-    config = require(path.join('P:', 'projets', 'Twitter', 'bot', 'config.js')); //how to get rid of ,,, in path?
-	
+var     fs = require('fs'),
+      config = require('/path/to/your/config.js');
+	  
 var T = new Twit(config);
 
-T.post('statuses/update', { status: 'Salut les gens!!' }, function(err, data, response) {
+T.post('statuses/update', { status: 'hello ladies+gents  !' }, function(err, data, response) {
   console.log(data)
 });
