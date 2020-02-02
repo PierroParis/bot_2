@@ -5,6 +5,6 @@ var     fs = require('fs'),
 	  
 var T = new Twit(config);
 
-T.get('users/lookup', { screen_name: 'enter_your_choice' }, function(err, data, response) {
+T.get('followers/list', { user_id: 'enter_your_choice' }, function(err, data, response) {
   console.log(data)
 });
